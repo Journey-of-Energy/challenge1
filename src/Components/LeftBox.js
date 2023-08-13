@@ -4,28 +4,38 @@ import React from "react";
 function LeftBox() {
   return (
     <Box
-      sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      sx={{
+        backgroundImage:
+          "linear-gradient(180deg, #75F 0%, #6943FF 0.01%, #2F2CE9 100%)",
+        width: { md: "50%", xs: "100%" },
+        height: { md: "512px", xs: "44%" },
+        borderRadius: { md: "32px", xs: "0px 0px 32px 32px" },
+        boxShadow: { md: "", xs: "0px 30px 60px 0px rgba(61, 108, 236, 0.15)" },
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "space-between",
+        textAlign: "center",
+      }}
     >
       <h3>Your Result</h3>
       <Box
         sx={{
-          bgcolor: "blue",
-          borderRadius: "100%",
-          width: 300,
-          height: 300,
+          width: { md: "200px", xs: "140px" },
+          height: { md: "200px", xs: "140px" },
+          backgroundImage:
+            "linear-gradient(to bottom,  hsla(256, 72%, 46%, 1),  hsla(241, 72%, 46%, 0) )",
+          borderRadius: "50%",
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
           justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <h1>76</h1>
-        <h3>of 100</h3>
       </Box>
-      <h2>Great</h2>
-      <p>
-        You scored higher than 65% of the people who have taken these tests.
-      </p>
+      <h4>of 100</h4>
+      <h3>Great</h3>
+      <p>Your performance exceed 65% of the people conducting the test here!</p>
     </Box>
   );
 }
