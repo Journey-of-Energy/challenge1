@@ -16,6 +16,9 @@ function LeftBox() {
         alignItems: "center",
         justifyContent: "space-between",
         textAlign: "center",
+        px: "55px",
+        pb: "55px",
+        pt: "38px",
       }}
     >
       <h3>Your Result</h3>
@@ -27,14 +30,16 @@ function LeftBox() {
             "linear-gradient(to bottom,  hsla(256, 72%, 46%, 1),  hsla(241, 72%, 46%, 0) )",
           borderRadius: "50%",
           display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
         <h1>76</h1>
+
+        <p>of 100</p>
       </Box>
-      <h4>of 100</h4>
-      <h3>Great</h3>
+      <h2>Great</h2>
       <p>Your performance exceed 65% of the people conducting the test here!</p>
     </Box>
   );

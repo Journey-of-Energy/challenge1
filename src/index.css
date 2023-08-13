@@ -2,6 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Hanken Grotesk;
+  color: #fff;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 500;
 }
 body {
   margin: 0;
