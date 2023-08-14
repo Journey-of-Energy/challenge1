@@ -5,7 +5,7 @@ function CategoryRow(props) {
   return (
     <Box
       sx={{
-        width: "288px",
+        width: "100%",
         height: "56px",
         background: `${props.color}`,
         borderRadius: "12px",
@@ -16,12 +16,12 @@ function CategoryRow(props) {
       }}
     >
       <Box sx={{ display: "flex", gap: "12px" }}>
-        <img src={props.icon} />
+        <img src={props.icon} alt={props.title} />
         <Typography
           sx={{
             color: `${props.fontColor}`,
             fontFamily: "Hanken Grotesk",
-            fontSize: "18px",
+            fontSize: { md: "18px", xs: "16px" },
             fontWeight: "500",
           }}
         >{`${props.title}`}</Typography>
@@ -30,7 +30,7 @@ function CategoryRow(props) {
         <Typography
           sx={{
             color: "#303B59",
-            fontSize: "18px",
+            fontSize: { md: "18px", xs: "16px" },
             fontWeight: "700",
             fontFamily: "Hanken Grotesk",
           }}
@@ -38,7 +38,7 @@ function CategoryRow(props) {
         <Typography
           sx={{
             color: "#303B59",
-            fontSize: "18px",
+            fontSize: { md: "18px", xs: "16px" },
             fontWeight: "700",
             fontFamily: "Hanken Grotesk",
             opacity: "0.5",
@@ -49,7 +49,7 @@ function CategoryRow(props) {
         <Typography
           sx={{
             color: "#303B59",
-            fontSize: "18px",
+            fontSize: { md: "18px", xs: "16px" },
             fontWeight: "700",
             fontFamily: "Hanken Grotesk",
             opacity: "0.5",

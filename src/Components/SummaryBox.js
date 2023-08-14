@@ -16,11 +16,13 @@ function SummaryBox() {
   return (
     <Box
       sx={{
-        width: "50%",
-        height: "100%",
-        p: "38px 40px 0px 40px",
+        width: { sm: "50%", xs: "100%" },
+        height: { sm: "100%", xs: "100%" },
+        // p: { md: "38px 40px 46px 40px", xs: "24px 30px 30px 30px" },
         display: "flex",
         flexDirection: "column",
+        justifyContent: "space-around",
+        px: { sm: "40px", xs: "30px" },
       }}
     >
       <Typography
@@ -28,8 +30,10 @@ function SummaryBox() {
         sx={{
           color: "#303B59",
           fontWeight: "700",
-          fontSize: "24px",
+          fontSize: { sm: "24px", xs: "18px" },
           fontFamily: "Hanken Grotesk",
+          m: "0px",
+          p: "0px",
         }}
       >
         Summary
@@ -38,9 +42,10 @@ function SummaryBox() {
         sx={{
           display: "flex",
           flexDirection: "column",
-          gap: "16px",
-          mt: "28px",
-          mb: "41px",
+          justifyContent: "space-between",
+          // mt: { md: "28px", xs: "24px" },
+          // mb: { md: "41px", xs: "24px" },
+          height: "60%",
         }}
       >
         <CategoryRow
@@ -85,6 +90,7 @@ function SummaryBox() {
 
           fontFamily: "Hanken Grotesk",
           fontSize: "18px",
+          alignSelf: "center",
         }}
       >
         Continue
